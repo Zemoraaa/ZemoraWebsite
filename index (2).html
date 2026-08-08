@@ -1,0 +1,817 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Zemora — The Bridge for E-Waste</title>
+<meta name="description" content="Zemora is a student-led collective that bridges everyday e-waste to certified recyclers, keeping devices out of landfills and resources in circulation.">
+<link rel="icon" type="image/png" href="assets/zemora-logo.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@500;600;700&family=IBM+Plex+Sans:wght@400;500;600&family=IBM+Plex+Mono:wght@400;500;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+<header class="site">
+  <div class="nav">
+    <a href="#home" class="logo"><img src="assets/zemora-logo.png" alt="Zemora logo" class="logo-img">ZEMORA<span class="sub">// e-waste bridge</span></a>
+    <nav class="links">
+      <a href="#home" class="nav-link" data-target="home">Home</a>
+      <a href="#about" class="nav-link" data-target="about">About</a>
+      <a href="#how-it-works" class="nav-link" data-target="how-it-works">How It Works</a>
+      <a href="#impact" class="nav-link" data-target="impact">Impact</a>
+      <a href="#contact" class="nav-link" data-target="contact">Contact</a>
+    </nav>
+    <div class="nav-cta">
+      <a href="#get-involved" class="btn btn-primary"><span class="long">Get Involved</span><span class="short">Donate</span></a>
+      <button class="nav-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </div>
+</header>
+
+<main>
+
+<div id="home" class="page-block">
+<!-- HERO -->
+  <section class="hero">
+    <div class="wrap">
+      <div class="hero-copy">
+        <div class="eyebrow">Student-led // e-waste collective</div>
+        <h1>Your old devices still have somewhere useful to go.</h1>
+        <p class="lede">Zemora is the bridge between the phones, cables, and batteries piling up in your drawer and the certified recyclers who can actually do something with them. We collect, we transport, we make sure nothing ends up where it shouldn't.</p>
+        <div class="btn-row">
+          <a href="#get-involved" class="btn btn-primary">Wanna Get Involved?</a>
+          <a href="#how-it-works" class="btn btn-ghost">See How It Works</a>
+        </div>
+        <div class="stat-strip">
+          <div class="stat"><div class="num">100%</div><div class="label">Sent to certified recyclers</div></div>
+          <div class="stat"><div class="num">0</div><div class="label">Landfill by design</div></div>
+          <div class="stat"><div class="num">Student</div><div class="label">Run, floor to leadership</div></div>
+        </div>
+      </div>
+
+      <div class="hero-visual">
+        <img src="assets/zemora-logo.png" alt="Zemora logo" class="hero-logo-mark">
+        <svg viewBox="0 0 460 420" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
+          <defs>
+            <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+              <feGaussianBlur stdDeviation="3.2" result="blur"/>
+              <feMerge><feMergeNode in="blur"/><feMergeNode in="SourceGraphic"/></feMerge>
+            </filter>
+          </defs>
+          <!-- board outline -->
+          <rect x="10" y="10" width="440" height="400" rx="6" fill="#151d16" stroke="#2a352b"/>
+          <!-- traces -->
+          <path d="M60 70 H180 V150 H260" stroke="#3c4a3d" stroke-width="2" fill="none"/>
+          <path d="M60 150 H140 V230" stroke="#3c4a3d" stroke-width="2" fill="none"/>
+          <path d="M400 90 H300 V180 H360 V260" stroke="#3c4a3d" stroke-width="2" fill="none"/>
+          <path d="M60 300 H160 V340 H320 V260" stroke="#c97d4a" stroke-width="2.2" fill="none" filter="url(#glow)"/>
+          <path d="M320 260 H400 V200" stroke="#7fbf8c" stroke-width="2" fill="none" opacity="0.7"/>
+          <!-- device: phone -->
+          <rect x="42" y="46" width="36" height="60" rx="6" fill="none" stroke="#8a9689" stroke-width="1.6"/>
+          <line x1="50" y1="94" x2="70" y2="94" stroke="#8a9689" stroke-width="1.6"/>
+          <!-- device: laptop -->
+          <rect x="360" y="60" width="60" height="38" rx="2" fill="none" stroke="#8a9689" stroke-width="1.6"/>
+          <path d="M356 98 H424 L418 108 H362 Z" fill="none" stroke="#8a9689" stroke-width="1.4"/>
+          <!-- device: battery -->
+          <rect x="120" y="210" width="42" height="24" rx="3" fill="none" stroke="#8a9689" stroke-width="1.6"/>
+          <rect x="162" y="217" width="6" height="10" fill="#8a9689"/>
+          <!-- collection node -->
+          <circle cx="320" cy="340" r="30" fill="#1c2620" stroke="#c97d4a" stroke-width="1.8" filter="url(#glow)"/>
+          <text x="320" y="345" text-anchor="middle" font-family="IBM Plex Mono, monospace" font-size="10" fill="#e6a468">ZMR</text>
+          <!-- via pads -->
+          <circle cx="180" cy="150" r="4" fill="#0c110d" stroke="#c97d4a" stroke-width="1.5"/>
+          <circle cx="260" cy="150" r="4" fill="#0c110d" stroke="#7fbf8c" stroke-width="1.5"/>
+          <circle cx="140" cy="230" r="4" fill="#0c110d" stroke="#c97d4a" stroke-width="1.5"/>
+          <circle cx="300" cy="180" r="4" fill="#0c110d" stroke="#7fbf8c" stroke-width="1.5"/>
+          <circle cx="360" cy="260" r="4" fill="#0c110d" stroke="#7fbf8c" stroke-width="1.5"/>
+          <circle cx="160" cy="340" r="4" fill="#0c110d" stroke="#c97d4a" stroke-width="1.5"/>
+          <!-- output: new product -->
+          <rect x="380" y="180" width="34" height="34" rx="4" fill="none" stroke="#7fbf8c" stroke-width="1.8"/>
+          <path d="M388 197 L396 205 L408 189" stroke="#a3e0ab" stroke-width="2" fill="none" stroke-linecap="round" stroke-linejoin="round"/>
+          <text x="90" y="380" font-family="IBM Plex Mono, monospace" font-size="9" fill="#5e6b5e">COLLECT → TRANSPORT → RECYCLE → REBUILD</text>
+        </svg>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <path class="live" d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <circle cx="170" cy="8" r="4" /><circle cx="450" cy="23" r="4" /><circle cx="790" cy="38" r="4" /><circle cx="1070" cy="23" r="4" />
+  </svg>
+
+  <!-- THE PROBLEM -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid cols-2" style="align-items:center; gap:50px;">
+        <div>
+          <div class="eyebrow">The problem</div>
+          <h2>Technology moves faster than our devices can be recycled.</h2>
+        </div>
+        <div class="flow">
+          <p>Every upgrade cycle leaves a trail — old phones in drawers, dead laptops in closets, chargers nobody can match to a device anymore. E-waste is one of the fastest-growing waste streams in the world, and most of it never reaches a facility equipped to handle it safely.</p>
+          <p>Thrown in with regular trash, it leaks heavy metals into soil and water. Left in a drawer, it just sits on resources — copper, gold, rare earth elements — that could be recovered and put back to work.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- WHAT WE DO -->
+  <section>
+    <div class="wrap">
+      <div class="section-head center">
+        <div class="eyebrow">What we do</div>
+        <h2>We're the bridge, not the destination.</h2>
+        <p class="lede center" style="margin-left:auto;margin-right:auto;">Zemora doesn't recycle e-waste ourselves — we make sure it actually gets to the people who can. We host collection drives, gather what comes in, and transport every device to certified recyclers.</p>
+      </div>
+
+      <div class="steps">
+        <div class="step">
+          <div class="designator">01 / COLLECT</div>
+          <h3>Host drives</h3>
+          <p>We run collection points at campuses, parks, and community spaces where people can drop off devices they no longer use.</p>
+        </div>
+        <div class="step">
+          <div class="designator">02 / SORT</div>
+          <h3>Sort & log</h3>
+          <p>Everything collected is sorted by type and logged, so nothing gets lost between drop-off and recycler.</p>
+        </div>
+        <div class="step">
+          <div class="designator">03 / TRANSPORT</div>
+          <h3>Move it out</h3>
+          <p>We transport the collected e-waste directly to recyclers certified to process it safely and responsibly.</p>
+        </div>
+        <div class="step">
+          <div class="designator">04 / RECOVER</div>
+          <h3>Recycle & rebuild</h3>
+          <p>Certified recyclers recover raw materials and route them back into manufacturing new products.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <path class="live" d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <circle cx="230" cy="15" r="4" /><circle cx="530" cy="30" r="4" /><circle cx="850" cy="12" r="4" /><circle cx="1110" cy="30" r="4" />
+  </svg>
+
+  <!-- WHY IT MATTERS -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Why it matters</div>
+        <h2>Two problems, one drop-off.</h2>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <span class="tag">// Environment</span>
+          <h3>Keeps toxins out of landfills</h3>
+          <p>Certified recycling processes e-waste safely, preventing heavy metals and chemicals from leaching into soil and groundwater.</p>
+        </div>
+        <div class="card">
+          <span class="tag">// Resources</span>
+          <h3>Keeps materials in circulation</h3>
+          <p>The copper, gold, and rare earth elements inside old devices get recovered and reused — new products without new mining.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- CTA -->
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="eyebrow" style="justify-content:center;">Get involved</div>
+        <h2>Have e-waste sitting around?</h2>
+        <p>Whether you're one person with a drawer full of old chargers or a class looking for a collection drive, there's a place for you in the loop.</p>
+        <div class="btn-row">
+          <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+          <a href="#contact" class="btn btn-ghost">Get in Touch</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page-break" aria-hidden="true"></div>
+
+<div id="about" class="page-block">
+<section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">About Zemora</div>
+      <h1>Built by students who got tired of watching devices go to waste.</h1>
+      <p class="lede">We're a student-led organisation working to promote the recycling of e-waste in our economy — one collection drive at a time.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid cols-2" style="gap:50px;">
+        <div>
+          <div class="eyebrow">Our bio</div>
+          <h2>Who we are</h2>
+        </div>
+        <div class="bio-block">
+          <p>We are a student-led organisation that works to promote the recycling of e-waste in our economy. With the rise of technology comes a parallel rise in electronic waste — and we exist to close that gap.</p>
+          <p>We act as a collection group. We host collection drives and transport all the e-waste we gather to certified recyclers, so they can recycle it and turn it into new products. That saves our environment from damage and pollution, and helps build new devices without draining new resources.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <path class="live" d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <circle cx="170" cy="8" r="4" /><circle cx="450" cy="23" r="4" /><circle cx="790" cy="38" r="4" /><circle cx="1070" cy="23" r="4" />
+  </svg>
+
+  <section>
+    <div class="wrap">
+      <div class="grid cols-2" style="gap:50px;">
+        <div>
+          <div class="eyebrow">Why we started</div>
+          <h2>Two things were true at once</h2>
+          <div class="flow" style="margin-top:20px;">
+            <p>Devices were getting replaced faster than ever. And most people had no easy, trustworthy way to make sure their old ones ended up somewhere responsible — so they sat in drawers, or worse, in the regular bin.</p>
+            <p>We didn't need to become recyclers ourselves. We needed to be the bridge: the group that makes the responsible option the easy option.</p>
+          </div>
+        </div>
+        <div>
+          <div class="eyebrow">Who runs it</div>
+          <h2>Student-led, floor to leadership</h2>
+          <div class="flow" style="margin-top:20px;">
+            <p>Every part of Zemora — from planning drives to driving the van to the recycler — is run by students. No outsourced operations, no middle layer. If a drive is happening, students organised it.</p>
+            <p>That keeps us close to the campuses and communities we serve, and keeps overhead low so more of every drive goes toward moving e-waste, not running an office.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we stand for</div>
+        <h2>Our values</h2>
+      </div>
+      <div class="panel" style="padding: 8px 30px;">
+        <div class="value">
+          <div class="vname">// Accountability</div>
+          <p>Every device we collect is logged and tracked until it's handed to a certified recycler. Nothing disappears in between.</p>
+        </div>
+        <div class="value">
+          <div class="vname">// Access</div>
+          <p>Responsible recycling shouldn't require a car, a search, or spare time. We bring the drop-off to where people already are.</p>
+        </div>
+        <div class="value">
+          <div class="vname">// No greenwashing</div>
+          <p>We only work with recyclers that are actually certified. If we can't verify where it's going, we don't send it.</p>
+        </div>
+        <div class="value">
+          <div class="vname">// Student-run</div>
+          <p>Decisions are made by the students doing the work — not a distant board disconnected from the drives themselves.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="eyebrow" style="justify-content:center;">Join in</div>
+        <h2>Want to help us bridge the gap?</h2>
+        <p>Host a drive, drop off your own devices, or partner with us as an organisation. Every route starts on the Get Involved page.</p>
+        <div class="btn-row">
+          <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+          <a href="#contact" class="btn btn-ghost">Contact Us</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page-break" aria-hidden="true"></div>
+
+<div id="how-it-works" class="page-block">
+<section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">How it works</div>
+      <h1>From your drawer to a certified recycler — the whole route.</h1>
+      <p class="lede">No guesswork, no dead ends. Here's exactly what happens to a device once it's in our hands.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="steps">
+        <div class="step">
+          <div class="designator">01 / HOST</div>
+          <h3>A drive gets scheduled</h3>
+          <p>We set up a collection drive — a date, a location, and a drop-off window.</p>
+        </div>
+        <div class="step">
+          <div class="designator">02 / DROP OFF</div>
+          <h3>Devices come in</h3>
+          <p>People bring in phones, laptops, cables, batteries, and other electronics. Everything is logged as it's received.</p>
+        </div>
+        <div class="step">
+          <div class="designator">03 / SORT</div>
+          <h3>We sort by type</h3>
+          <p>Devices are grouped by category and checked for anything that needs special handling, like batteries.</p>
+        </div>
+        <div class="step">
+          <div class="designator">04 / TRANSPORT</div>
+          <h3>We move it out</h3>
+          <p>Our team transports the collected e-waste directly to a certified recycling facility — never to a third party we can't vouch for.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <path class="live" d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <circle cx="230" cy="15" r="4" /><circle cx="530" cy="30" r="4" /><circle cx="850" cy="12" r="4" /><circle cx="1110" cy="30" r="4" />
+  </svg>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">At the recycler</div>
+        <h2>What happens after we drop it off</h2>
+        <p class="lede">Certified recyclers break devices down safely, separating hazardous components from reusable materials. Metals like copper and gold are recovered and re-enter manufacturing, while hazardous parts are processed under proper safety controls — instead of leaching into landfill soil and water.</p>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">What we take</div>
+        <h2>Accepted vs. not accepted</h2>
+      </div>
+      <div class="accept-grid">
+        <div class="panel" style="padding:28px;">
+          <h3 style="margin-bottom:16px; color:var(--trace-bright);">We accept</h3>
+          <ul class="accept-list yes">
+            <li>Phones & tablets</li>
+            <li>Laptops & desktops</li>
+            <li>Chargers & cables</li>
+            <li>Keyboards, mice & peripherals</li>
+            <li>Batteries (taped terminals)</li>
+            <li>Small household electronics</li>
+            <li>Printers & routers</li>
+          </ul>
+        </div>
+        <div class="panel" style="padding:28px;">
+          <h3 style="margin-bottom:16px; color:var(--copper-bright);">Not through Zemora</h3>
+          <ul class="accept-list no">
+            <li>Large appliances (fridges, washers)</li>
+            <li>CRT monitors & TVs</li>
+            <li>Items with active liquid leaks</li>
+            <li>Medical devices</li>
+            <li>Anything without prior confirmation for bulk drop-off</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">FAQ</div>
+        <h2>Common questions</h2>
+      </div>
+      <div class="faq-list">
+        <details class="faq-item">
+          <summary>Do I need to wipe my data before dropping off a device?</summary>
+          <p>Yes — we strongly recommend backing up and factory-resetting any device with personal data before drop-off. We don't access or read data from devices we collect, but resetting is on you.</p>
+        </details>
+        <details class="faq-item">
+          <summary>Is there a cost to drop off e-waste?</summary>
+          <p>No. Drop-off at any Zemora collection drive is free.</p>
+        </details>
+        <details class="faq-item">
+          <summary>How do you choose which recyclers to work with?</summary>
+          <p>We only work with recyclers holding proper e-waste handling certification, and we confirm this before any partnership begins.</p>
+        </details>
+        <details class="faq-item">
+          <summary>What if I just have one or two items, not enough for a drive?</summary>
+          <p>You can still drop items off at our next scheduled collection point — check the Get Involved page for upcoming dates and locations.</p>
+        </details>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="eyebrow" style="justify-content:center;">Ready to start</div>
+        <h2>Vote for a collection drive location</h2>
+        <div class="btn-row">
+          <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page-break" aria-hidden="true"></div>
+
+<div id="get-involved" class="page-block">
+<section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Get involved</div>
+      <h1>There's a way in, whoever you are.</h1>
+      <p class="lede">One person with a drawer of old cables. A class ready to run a drive. A business with a stockroom of retired laptops. Pick your route below.</p>
+    </div>
+  </section>
+
+  <section>
+    <div class="wrap">
+      <div class="grid cols-2">
+        <div class="card">
+          <span class="tag">// For individuals</span>
+          <h3>Drop off your e-waste</h3>
+          <p>Bring your old devices to our next scheduled collection point. Check upcoming drives below or reach out to find the nearest one.</p>
+        </div>
+        <div class="card">
+          <span class="tag">// Just Wanna help?</span>
+          <h3>Dont have E-Waste but still wanna be a part of the action?</h3>
+          <p>Spread the message! More E-waste means more recycling and keeping more toxins out of the land </p>
+        </div>
+        <div class="card">
+          <span class="tag">// For students</span>
+          <h3>Volunteer with us</h3>
+          <p>Join the team that plans drives, sorts devices, and drives the route to recyclers. No experience required — just consistency.</p>
+        </div>
+        <div class="card">
+          <span class="tag">// For organisations</span>
+          <h3>Partner with Zemora</h3>
+          <p>Businesses and institutions can partner with us for recurring pickups, sponsor a drive, or help fund transport logistics.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <path class="live" d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <circle cx="170" cy="8" r="4" /><circle cx="450" cy="23" r="4" /><circle cx="790" cy="38" r="4" /><circle cx="1070" cy="23" r="4" />
+  </svg>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Upcoming drives</div>
+        <h2>Find a drop-off near you</h2>
+      </div>
+      <div class="loc-list">
+        <div class="loc-row">
+          <div>
+            <div class="name">Nothing yet :(</div>
+            <div class="meta">Be on the look out we might not have anything yet but we will work to hosting a drive very soon!</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight" id="form">
+    <div class="wrap">
+      <div class="grid cols-2" style="gap:50px; align-items:start;">
+        <div>
+          <div class="eyebrow">Start here</div>
+          <h2>Have Questions?</h2>
+          <p style="margin-top:16px;">Fill this in and our team will follow up with you</p>
+        </div>
+        <form class="contact-form" action="https://formsubmit.co/zemora.ae@gmail.com" method="POST">
+          <div class="field">
+            <label for="name">Full name</label>
+            <input type="text" id="name" name="name" placeholder="Arnav" required>
+          </div>
+          <div class="field">
+            <label for="email">Email</label>
+            <input type="email" id="email" name="email" placeholder="your@email.com" required>
+          </div>
+          <div class="field">
+            <label for="type">I want to</label>
+            <select id="type" name="type">
+              <option>Drop off my own e-waste</option>
+              <option>Just a question</option>
+              <option>Volunteer</option>
+              <option>Partner as an organisation</option>
+              <option>Other...</option>
+            </select>
+          </div>
+          <div class="field">
+            <label for="details">Details</label>
+            <textarea id="details" name="details" placeholder="Tell us about your location, group size, or timing"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send Request</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page-break" aria-hidden="true"></div>
+
+<div id="impact" class="page-block">
+<section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Impact</div>
+      <h1>Every device we route is one less in a landfill.</h1>
+      <p class="lede">We're a young, student-led group — our numbers are still small. Here's how we track our own progress, and the environmental case for why it matters at any scale.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="panel" style="padding:40px;">
+        <div class="grid cols-3">
+          <div class="stat">
+            <div class="num" style="font-size:2.2rem;">Drives</div>
+            <div class="label">Tracked from our first drive onward</div>
+          </div>
+          <div class="stat">
+            <div class="num" style="font-size:2.2rem;">Devices</div>
+            <div class="label">Logged at collection, not estimated</div>
+          </div>
+          <div class="stat">
+            <div class="num" style="font-size:2.2rem;">Recyclers</div>
+            <div class="label">Certified partners we route to</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <path class="live" d="M0 30 H200 L230 15 H500 L530 30 H820 L850 12 H1080 L1110 30 H1200" />
+    <circle cx="230" cy="15" r="4" /><circle cx="530" cy="30" r="4" /><circle cx="850" cy="12" r="4" /><circle cx="1110" cy="30" r="4" />
+  </svg>
+
+  <section>
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">The environmental case</div>
+        <h2>Why routing matters, at any scale</h2>
+      </div>
+      <div class="grid cols-2">
+        <div class="card">
+          <span class="tag">// Pollution prevented</span>
+          <h3>Kept out of landfill</h3>
+          <p>Devices thrown in regular trash can leak heavy metals and chemicals into soil and groundwater over time. Certified recycling processes these components safely instead.</p>
+        </div>
+        <div class="card">
+          <span class="tag">// Resources recovered</span>
+          <h3>Materials, not mining</h3>
+          <p>Copper, gold, and rare earth elements inside old electronics can be recovered and reused — meaning new products without new extraction.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">From our drives</div>
+        <h2>What's come through so far</h2>
+      </div>
+      <div class="grid cols-3">
+        <div class="card">
+          <span class="tag">// Drive log</span>
+          <h3>Coming...</h3>
+          <p>Stay Tuned</p>
+        </div>
+        <div class="card">
+          <span class="tag">// Drive log</span>
+          <h3>Coming...</h3>
+          <p>Stay Tuned</p>
+        </div>
+        <div class="card">
+          <span class="tag">// Drive log</span>
+          <h3>Coming</h3>
+          <p>Stay Tuned</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="cta-banner">
+        <div class="eyebrow" style="justify-content:center;">Add to the count</div>
+        <h2>The journey to save our future skies, begins where dead electronics rise.</h2>
+        <div class="btn-row">
+          <a href="#get-involved" class="btn btn-primary">Get Involved</a>
+        </div>
+      </div>
+    </div>
+  </section>
+</div>
+
+<div class="page-break" aria-hidden="true"></div>
+
+<div id="contact" class="page-block">
+<section class="page-hero">
+    <div class="wrap">
+      <div class="eyebrow">Contact & socials</div>
+      <h1>Find us wherever you already are.</h1>
+      <p class="lede">Questions, partnership ideas, or just want to see what a drive looks like — reach out directly or follow along.</p>
+    </div>
+  </section>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="section-head">
+        <div class="eyebrow">Follow along</div>
+        <h2>Zemora on social</h2>
+      </div>
+      <div class="social-grid">
+        <a class="social-card" href="https://www.instagram.com/zemoraaa.ae/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="3" width="18" height="18" rx="5"/><circle cx="12" cy="12" r="4.2"/><circle cx="17.4" cy="6.6" r="1"/></svg>
+          <div class="platform">Instagram</div>
+          <div class="handle">zemoraaa.ae</div>
+        </a>
+        <a class="social-card" href="https://mail.google.com/mail/u/0/?tab=rm&ogbl#search/zemora.ae%40gmail.com?compose=new" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><rect x="3" y="4" width="18" height="16" rx="2"/><path d="M3 6l9 7 9-7"/></svg>
+          <div class="platform">Email</div>
+          <div class="handle">zemora.ae@gmail.com</div>
+        </a>
+        <a class="social-card" href="#" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M22 8.5s-2.2-1.6-6-1.6c-4.5 0-8 3-8 3s-1-2-4-2v10c3 0 4-2 4-2s3.5 3 8 3c3.8 0 6-1.6 6-1.6z"/></svg>
+          <div class="platform">YouTube</div>
+          <div class="handle">/@zemora</div>
+        </a>
+        <a class="social-card" href="#" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6"><path d="M21 11.5a8.5 8.5 0 0 1-11.8 7.8L4 21l1.7-5.2A8.5 8.5 0 1 1 21 11.5z"/></svg>
+          <div class="platform">WhatsApp Community</div>
+          <div class="handle">Join for drive alerts</div>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <svg class="trace-divider" viewBox="0 0 1200 46" preserveAspectRatio="none" aria-hidden="true">
+    <path d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <path class="live" d="M0 23 H140 L170 8 H420 L450 23 H760 L790 38 H1040 L1070 23 H1200" />
+    <circle cx="170" cy="8" r="4" /><circle cx="450" cy="23" r="4" /><circle cx="790" cy="38" r="4" /><circle cx="1070" cy="23" r="4" />
+  </svg>
+
+  <section class="tight">
+    <div class="wrap">
+      <div class="grid cols-2" style="gap:50px; align-items:start;">
+        <div>
+          <div class="eyebrow">Reach out directly</div>
+          <h2>Send us a message</h2>
+          <p style="margin-top:16px;">General questions, media requests, or partnership enquiries — this goes straight to our team.</p>
+
+          <div class="flow" style="margin-top:30px;">
+            <div>
+              <div class="eyebrow" style="margin-bottom:6px;">Email</div>
+              <p style="color:var(--text);">zemora.ae@gmail.com</p>
+            </div>
+            <div>
+              <div class="eyebrow" style="margin-bottom:6px;">Response time</div>
+              <p style="color:var(--text);">Usually within 2–3 days — we're a student team, not a call center.</p>
+            </div>
+            <div>
+              <div class="eyebrow" style="margin-bottom:6px;">Based at</div>
+              <p style="color:var(--text);">The Students of AbuDhabi</p>
+            </div>
+          </div>
+        </div>
+
+        <form class="contact-form" action="https://formsubmit.co/zemora.ae@gmail.com" method="POST">
+          <div class="field">
+            <label for="c-name">Full name</label>
+            <input type="text" id="c-name" name="name" placeholder="Jeffin" required>
+          </div>
+          <div class="field">
+            <label for="c-email">Email</label>
+            <input type="email" id="c-email" name="email" placeholder="email@example.com" required>
+          </div>
+          <div class="field">
+            <label for="c-subject">Subject</label>
+            <input type="text" id="c-subject" name="subject" placeholder="Partnership enquiry">
+          </div>
+          <div class="field">
+            <label for="c-message">Message</label>
+            <textarea id="c-message" name="message" placeholder="How can we help?"></textarea>
+          </div>
+          <button type="submit" class="btn btn-primary" style="justify-self:start;">Send Message</button>
+        </form>
+      </div>
+    </div>
+  </section>
+</div>
+
+</main>
+
+<footer class="site">
+  <div class="wrap">
+    <div class="footer-grid">
+      <div>
+        <div class="logo" style="margin-bottom:14px;"><img src="assets/zemora-logo.png" alt="Zemora logo" class="logo-img">ZEMORA</div>
+        <p style="max-width:32ch;">A student-led bridge between everyday e-waste and certified recyclers.</p>
+      </div>
+      <div>
+        <h4>Site</h4>
+        <ul>
+          <li><a href="#about">About</a></li>
+          <li><a href="#how-it-works">How It Works</a></li>
+          <li><a href="#impact">Impact</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Get Involved</h4>
+        <ul>
+          <li><a href="#get-involved">Drop Off E-Waste</a></li>
+          <li><a href="#get-involved">Partner With Us</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Connect</h4>
+        <ul>
+          <li><a href="#contact">Contact & Socials</a></li>
+          <li><a href="https://www.instagram.com/zemoraaa.ae/">Zemoraaa</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 ZEMORA — student-led e-waste collective</span>
+      <span>// keep it out of the landfill</span>
+    </div>
+  </div>
+</footer>
+
+<script>
+document.addEventListener('DOMContentLoaded', () => {
+  const toggle = document.querySelector('.nav-toggle');
+  const links = document.querySelector('nav.links');
+  if (toggle && links) {
+    toggle.addEventListener('click', () => {
+      const open = links.classList.toggle('open');
+      links.style.display = open ? 'flex' : 'none';
+      links.style.flexDirection = 'column';
+      links.style.gap = '16px';
+      links.style.position = 'absolute';
+      links.style.top = '64px';
+      links.style.left = '0';
+      links.style.right = '0';
+      links.style.background = '#0f150f';
+      links.style.padding = '20px 28px';
+      links.style.borderBottom = '1px solid #2a352b';
+    });
+  }
+
+  // Close mobile menu after clicking a link
+  document.querySelectorAll('nav.links a').forEach(a => {
+    a.addEventListener('click', () => {
+      if (window.innerWidth <= 860 && links) {
+        links.style.display = 'none';
+        links.classList.remove('open');
+      }
+    });
+  });
+
+  // Animate trace dividers into view
+  const dividers = document.querySelectorAll('.trace-divider');
+  if ('IntersectionObserver' in window && dividers.length) {
+    const io = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add('in-view');
+          io.unobserve(entry.target);
+        }
+      });
+    }, { threshold: 0.3 });
+    dividers.forEach(d => io.observe(d));
+  } else {
+    dividers.forEach(d => d.classList.add('in-view'));
+  }
+
+  // Highlight active nav link based on section in view
+  const sections = document.querySelectorAll('.page-block');
+  const navAnchors = document.querySelectorAll('nav.links a');
+  if ('IntersectionObserver' in window && sections.length) {
+    const navIo = new IntersectionObserver((entries) => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          const id = entry.target.id;
+          navAnchors.forEach(a => a.classList.toggle('active', a.getAttribute('data-target') === id));
+        }
+      });
+    }, { threshold: 0.5 });
+    sections.forEach(s => navIo.observe(s));
+  }
+});
+</script>
+</body>
+</html>
